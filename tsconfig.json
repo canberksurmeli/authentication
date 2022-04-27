@@ -1,0 +1,12 @@
+{
+    "extends": "@tsconfig/node16/tsconfig.json",
+    "compilerOptions": {
+        "strict": true,
+        "removeComments": true,
+        "declaration": false,
+        "sourceMap": true,
+        "outDir": "out",
+        "resolveJsonModule": true,
+        "noImplicitThis": false
+    }
+}
