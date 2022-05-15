@@ -5,6 +5,7 @@ import authenticationRouter from "./routers/authentication"
 import passRouter from "./routers/pass-router"
 const app = express()
 
+app.use(express.urlencoded())
 app.use(express.json())
 app.use("/auth", authenticationRouter)
 app.use("/pass", passRouter)

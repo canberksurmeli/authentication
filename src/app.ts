@@ -1,6 +1,8 @@
+import { checkPgConnection } from "./pgClient"
 import { startHttpsServer, startHttpServer } from "./server"
 
-const app = () => {
+const app = async () => {
+    await checkPgConnection();
     startHttpServer()
     startHttpsServer()
 }
