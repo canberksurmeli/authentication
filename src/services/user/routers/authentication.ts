@@ -1,6 +1,6 @@
 import { Request, Response, Router } from "express"
 import { PoolClient } from "pg"
-import { transaction } from "../pgClient"
+import { transaction } from "../../../lib/pgClient"
 
 const authenticationRouter = Router()
 

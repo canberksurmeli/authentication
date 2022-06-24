@@ -17,11 +17,11 @@ export const checkPgConnection = async () => {
     return true
 }
 
-export async function transaction<T>(func: (client: PoolClient) => Promise<T>) {
+export async function transaction<T>(func: (client: PoolClient) => Promise<T>): Promise<T> {
     const client = await pool.connect()
     try {
         await client.query("BEGIN")
-        const result = await func(client)
+        const result: T = await func(client)
         await client.query("COMMIT")
         return result
     } catch (err) {
