@@ -23,10 +23,9 @@ Follow the steps below to set up and run the project in your local environment.
     ``` bash
     cd authentication
     npm install
-
     ```
-Start the development server:
-
+3. Start the development server:
+    
     ``` bash
     npm run dev
     ```
