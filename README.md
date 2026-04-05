@@ -15,7 +15,7 @@ Follow the steps below to set up and run the project in your local environment.
 1. Clone the repository:
 
     ```bash 
-    git clone https://github.com/canboslukberk/authentication.git
+    git clone https://github.com/canberksurmeli/authentication.git
     ```
 
 2. Install the dependencies
